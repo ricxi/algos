@@ -9,7 +9,6 @@ let insertion_sort (xs: int list) : int list =
     | [] -> sorted
     | h::t -> aux (insert h sorted) t
   in aux [] xs;;
-
   
 let len (xs: int list) : int =
   let rec aux (xs: int list) (acc : int) : int =
@@ -17,3 +16,4 @@ let len (xs: int list) : int =
     | [] -> acc
     | _::t -> aux t (acc+1)
   in aux xs 0;;
+
